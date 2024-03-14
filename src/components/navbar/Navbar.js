@@ -1,17 +1,15 @@
 import "./Navbar.css";
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-
   return (
     <Disclosure id="nav-container" as="nav" className="sticky top-0">
       {({ open }) => (
@@ -31,27 +29,23 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <a href="http://localhost:3000/">
-                    <img
-                      id="img-logo"
-                      className="h-7 w-auto rounded-full cursor-pointer"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx5layAuFWznHjTIq61zsvcnSxlUVUeywRB787Lo3QxQ4RCjpxEkOaWkzdXyRg5SLuklI&usqp=CAU"
-                      alt="Your Company"
-                    />
-                  </a>
-                </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 ">
                     <NavLink
+                      to="/shop"
+                      className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
+                    >
+                      محصولات
+                    </NavLink>
+                    <NavLink
                       to="/news"
-                      className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Yekan"
+                      className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
                     >
                       اخبار
                     </NavLink>
                     <NavLink
                       to="/"
-                      className="text-gray-300 hover:bg-transparent hover:text-white rounded-md px-3 py-2 text-sm font-medium Yekan"
+                      className="text-gray-300 hover:bg-transparent hover:text-white rounded-md px-3 py-2 text-sm font-medium Lamia"
                     >
                       صفحه اصلی
                     </NavLink>
@@ -64,7 +58,7 @@ export default function Navbar() {
                   <div>
                     <Menu.Button
                       id="menu-btn"
-                      className="w-[100px] h-7 sm:w-40 sm:h-10 p-2 justify-center items-center relative flex rounded-full bg-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className="menu-button w-[100px] h-7 sm:w-44 sm:h-10 p-2  justify-center items-center relative flex rounded-sm text-sm focus:outline-none  focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
@@ -84,7 +78,7 @@ export default function Navbar() {
                         href=""
                         className="Fredoka uppercase mx-2 text-neutral-100 text-[10px] md:text-sm"
                       >
-                        game center
+                        Home
                       </a>
                     </Menu.Button>
                   </div>
@@ -97,7 +91,7 @@ export default function Navbar() {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                   >
-                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-transparent py-1 shadow-lg ring-1 ring-black ring-opacity-15 focus:outline-none ">
+                    <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md box-color py-1 shadow-lg ring-1 ring-black ring-opacity-15 focus:outline-none ">
                       <Menu.Item>
                         {({ active }) => (
                           <NavLink
@@ -106,7 +100,7 @@ export default function Navbar() {
                               active
                                 ? " text-center text-black font-extrabold"
                                 : "",
-                              "block px-4 py-2 text-sm text-center Yekan "
+                              "block px-4 py-2 text-sm text-center Lamia "
                             )}
                           >
                             پنل
@@ -123,7 +117,7 @@ export default function Navbar() {
                               active
                                 ? " text-center text-black font-extrabold"
                                 : "",
-                              "block px-4 py-2 text-sm text-center Yekan"
+                              "block px-4 py-2 text-sm text-center Lamia"
                             )}
                           >
                             ورود
@@ -138,7 +132,7 @@ export default function Navbar() {
                               active
                                 ? " text-center text-black font-extrabold"
                                 : "",
-                              "block px-4 py-2 text-sm text-center Yekan "
+                              "block px-4 py-2 text-sm text-center Lamia "
                             )}
                           >
                             درباره ما
@@ -161,10 +155,16 @@ export default function Navbar() {
                 صفحه اصلی
               </NavLink>
               <NavLink
-                to="/article"
-                className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Yekan"
+                to="/news"
+                className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
               >
-                مقالات
+                اخبار
+              </NavLink>
+              <NavLink
+                to="/shop"
+                className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
+              >
+                محصولات
               </NavLink>
             </div>
           </Disclosure.Panel>
