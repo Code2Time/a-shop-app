@@ -1,13 +1,13 @@
 import Navbar from '../../components/navbar/Navbar'
-import './Shop.css'
+import './News.css'
 
-function Shop() {
+function News() {
   return (
     <div>
-    <Navbar />
-    shop pages
+      <Navbar />
+      news pages
     </div>
   )
 }
 
-export default Shop
+export default News

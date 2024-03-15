@@ -4,6 +4,10 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
+import { CgLogIn } from "react-icons/cg";
+import { AiOutlineTeam } from "react-icons/ai";
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -98,18 +102,16 @@ export default function Navbar() {
                             to="/panel"
                             className={classNames(
                               active
-                                ? " text-center text-black font-extrabold"
+                                ? " text-center text-black font-extrabold "
                                 : "",
-                              "block px-4 py-2 text-sm text-center Lamia "
+                              "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1 "
                             )}
                           >
-                            پنل
+                           <CgProfile size={18}/> پنل
                           </NavLink>
                         )}
                       </Menu.Item>
                       <Menu.Item>
-                        {/* به دلیل استفاده از تیلویند و توابعش به مشکل خوردیم */}
-
                         {({ active }) => (
                           <NavLink
                             to="/login"
@@ -117,10 +119,10 @@ export default function Navbar() {
                               active
                                 ? " text-center text-black font-extrabold"
                                 : "",
-                              "block px-4 py-2 text-sm text-center Lamia"
+                              "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1"
                             )}
                           >
-                            ورود
+                           <CgLogIn size={20} /> ورود
                           </NavLink>
                         )}
                       </Menu.Item>
@@ -132,10 +134,10 @@ export default function Navbar() {
                               active
                                 ? " text-center text-black font-extrabold"
                                 : "",
-                              "block px-4 py-2 text-sm text-center Lamia "
+                              "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1 "
                             )}
                           >
-                            درباره ما
+                           <AiOutlineTeam size={20} />  درباره ما
                           </NavLink>
                         )}
                       </Menu.Item>
@@ -150,19 +152,19 @@ export default function Navbar() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               <NavLink
                 to="/"
-                className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Yekan"
+                className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Lamia"
               >
                 صفحه اصلی
               </NavLink>
               <NavLink
                 to="/news"
-                className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
+                className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Lamia"
               >
                 اخبار
               </NavLink>
               <NavLink
                 to="/shop"
-                className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
+                className="text-gray-300  hover:text-white block rounded-md px-3 py-2 text-base font-medium text-center Lamia"
               >
                 محصولات
               </NavLink>

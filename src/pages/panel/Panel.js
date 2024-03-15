@@ -1,13 +1,13 @@
+import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
-import './Shop.css'
 
-function Shop() {
+function Panel() {
   return (
     <div>
     <Navbar />
-    shop pages
+      panel page
     </div>
   )
 }
 
-export default Shop
+export default Panel

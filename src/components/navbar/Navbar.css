@@ -1,7 +1,10 @@
 #nav-container {
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  background-color: rgba(149, 138, 105, 0.551);
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.304);
+  position: sticky;
+  top: 0;
+ 
 }
 .menu-button {
   backdrop-filter: blur(1px) saturate(100%);
@@ -18,7 +21,7 @@
 }
 
 .box-color {
-  background-color: rgba(149, 138, 105, 0.551);
+  background-color: rgba(117, 114, 103, 0.551);
 }
 
 /* border */
@@ -28,7 +31,7 @@
   --g: 1px; /* the gap on hover */
 
   padding: calc(var(--g) + var(--b));
-  --_g: #0000 25%, var(--c) 0;
+  --_g: #bcbcbc00 25%, var(--c) 0;
   background: conic-gradient(
         from 180deg at top var(--b) right var(--b),
         var(--_g)
