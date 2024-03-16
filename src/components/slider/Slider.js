@@ -2,8 +2,8 @@ import "./Slider.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductItem from "./Product-Item";
-import { responsive } from "./ProductData";
-import { prorducts } from "./ProductData";
+import { responsive } from "../../Data";
+import { prorducts } from "../../Data";
 
 function Slider() {
   return (
