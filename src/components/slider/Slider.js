@@ -7,7 +7,7 @@ import { prorducts } from "../../Data";
 
 function Slider() {
   return (
-    <div className="w-[90%] my-32 m-auto">
+    <div data-aos="fade-down" className="w-[90%] my-32 m-auto ">
       <Carousel responsive={responsive}>
         {prorducts.map((item) => (
           <div>
