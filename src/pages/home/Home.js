@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Commoditys from "../../components/commoditys/Commoditys";
 import Navbar from "../../components/navbar/Navbar";
 import Slider from "../../components/slider/Slider";
@@ -8,6 +8,10 @@ import { Link, Outlet } from "react-router-dom";
 
 function Home() {
   const [commoditysitem, setCommoditysitem] = useState(commodityses);
+  const moreBtn = useRef();
+  const deleteHandler = () => {
+    moreBtn.current.style.display = "none";
+  };
 
   return (
     <div data-aos-delay="300" data-aos="zoom-in">
@@ -36,8 +40,9 @@ function Home() {
           <Commoditys {...item} />
         ))}
         <Link
+          onClick={deleteHandler}
           data-aos="fade-down"
-          onClick={() => {}}
+          ref={moreBtn}
           to="more"
           className="more-products col-span-12 mx-auto my-10 Lamia hover:-translate-y-1"
         >

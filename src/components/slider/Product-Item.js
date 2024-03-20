@@ -3,7 +3,7 @@ import "./Product.css";
 
 function ProductItem(props) {
   return (
-    <div className="card  ">
+    <div data-aos="flip-right" className="card  ">
       <div className="product-img">
         <img className="w-full h-full" src={props.img} alt="img" />
       </div>
@@ -15,7 +15,7 @@ function ProductItem(props) {
       <div className="body">
         <h1 className="text-justify w-[80%] m-auto ">{props.desc}</h1>
       </div>
-      <button className="buy-btn mt-10 " >
+      <button className="buy-btn mt-10 ">
         <Link className="Lamia">خرید</Link>
       </button>
     </div>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Commoditys.css";
 
-function Commoditys({ title, img , name , desc , price , off }) {
+function Commoditys({ title, img , name , desc , price , off , currency}) {
   return (
     <>
       <div
@@ -34,7 +34,7 @@ function Commoditys({ title, img , name , desc , price , off }) {
           </p>
           <b>{off}</b>
         </div>
-        <h1 className="Lamia ">تومان</h1>
+        <h1 className="Lamia ">{currency}</h1>
         <button
           id="commoditys-btn"
           type="button"
