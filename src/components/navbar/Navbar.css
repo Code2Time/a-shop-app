@@ -21,12 +21,12 @@
 }
 
 .box-color {
-  background-color: rgba(117, 114, 103, 0.551);
+  background-color: rgba(117, 104, 103, 0.551);
 }
 
 /* border */
 .menu-button {
-  --c: #524d4a; /* the border color */
+  --c: #524a4a; /* the border color */
   --b: 2px; /* the border thickness*/
   --g: 1px; /* the gap on hover */
 

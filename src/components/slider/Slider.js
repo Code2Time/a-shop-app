@@ -1,4 +1,3 @@
-import "./Slider.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductItem from "./Product-Item";
@@ -11,8 +10,7 @@ function Slider() {
       <Carousel responsive={responsive}>
         {prorducts.map((item) => (
           <div>
-            {" "}
-            <ProductItem {...item} />{" "}
+            <ProductItem {...item} />
           </div>
         ))}
       </Carousel>

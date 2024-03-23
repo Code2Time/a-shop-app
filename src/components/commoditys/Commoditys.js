@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Commoditys.css";
 
-function Commoditys({ title, img , name , desc , price , off , currency}) {
+function Commoditys({ title, img, name, desc, price, off, currency }) {
   return (
     <>
       <div
@@ -19,9 +19,7 @@ function Commoditys({ title, img , name , desc , price , off , currency}) {
           <h1 className="Lamia">{name}</h1>
         </div>
         <div id="commoditys-info" className="my-2">
-          <p className="text-justify px-2 Yekan text-sm">
-            {desc}
-          </p>
+          <p className="text-justify px-2 Yekan text-sm">{desc}</p>
         </div>
         <div className="my-2 flex justify-around ">
           <p
@@ -30,7 +28,7 @@ function Commoditys({ title, img , name , desc , price , off , currency}) {
               textDecorationColor: "red",
             }}
           >
-           {price}
+            {price}
           </p>
           <b>{off}</b>
         </div>
@@ -40,7 +38,7 @@ function Commoditys({ title, img , name , desc , price , off , currency}) {
           type="button"
           className=" col-span-12 my-10 mx-auto text-center items-center justify-center w-3/4 h-[30px] rounded-md shadow shadow-slate-600 transition-all hover:-translate-y-1  hover:shadow  "
         >
-          <Link className="Lalezar  ">دانلود</Link>
+          <Link className="Lalezar  ">خرید</Link>
         </button>
       </div>
     </>
