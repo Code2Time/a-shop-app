@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./Commoditys.css";
 
-function Commoditys({ title, img, name, desc, price, off, currency }) {
+function Commoditys({id , title, img, name, desc, price, off, currency }) {
+
   return (
     <>
       <div
@@ -38,7 +39,7 @@ function Commoditys({ title, img, name, desc, price, off, currency }) {
           type="button"
           className=" col-span-12 my-10 mx-auto text-center items-center justify-center w-3/4 h-[30px] rounded-md shadow shadow-slate-600 transition-all hover:-translate-y-1  hover:shadow  "
         >
-          <Link className="Lalezar  ">خرید</Link>
+          <Link to={`/shop/${id}`} className="Lalezar  ">خرید</Link>
         </button>
       </div>
     </>

@@ -14,7 +14,7 @@ const Rout = [
       {path : 'more' , element : <More /> }
     ]
   },
-  { path: "/shop", element: <Shop /> },
+  { path: "/shop/:IdItem", element: <Shop /> },
   { path: "/news", element: <News /> },
   { path: "/about", element: <About /> },
   { path: "/login", element: <Login /> },
