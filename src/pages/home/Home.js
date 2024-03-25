@@ -39,7 +39,7 @@ function Home() {
           className="rounded-lg max-w-[1000px] h-auto w-5/6 m-auto py-8 px-8 relative mt-4 grid grid-cols-12 gap-2 "
         >
           {commoditysitem.map((item) => (
-            <Commoditys {...item} />
+            <Commoditys key={item.id} {...item} />
           ))}
           <Link
             onClick={deleteHandler}

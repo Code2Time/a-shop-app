@@ -9,7 +9,7 @@ function Slider() {
     <div data-aos="fade-down" className="w-[90%] my-32 m-auto ">
       <Carousel responsive={responsive}>
         {prorducts.map((item) => (
-          <div>
+          <div key={item.id}>
             <ProductItem {...item} />
           </div>
         ))}

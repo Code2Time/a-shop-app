@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import'./Navbarpro.css'
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -8,13 +8,16 @@ import { CgLogIn } from "react-icons/cg";
 import { AiOutlineTeam } from "react-icons/ai";
 
 
+
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+
+function Navbarpro() {
   return (
-    <Disclosure id="nav-container" as="nav" className="sticky top-0">
+    <Disclosure id="navpro-container" as="nav" className="sticky top-0">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -61,7 +64,7 @@ export default function Navbar() {
                   <div>
                     <Menu.Button
                       id="menu-btn"
-                      className="menu-button w-[100px] h-7 sm:w-44 sm:h-10 p-2  justify-center items-center relative flex rounded-sm text-sm focus:outline-none  focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className="menu-button button-pro w-[100px] h-7 sm:w-44 sm:h-10 p-2  justify-center items-center relative flex rounded-sm text-sm focus:outline-none  focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
@@ -174,3 +177,5 @@ export default function Navbar() {
     </Disclosure>
   );
 }
+
+export default Navbarpro

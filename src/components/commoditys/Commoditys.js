@@ -23,7 +23,7 @@ function Commoditys({id , title, img, name, desc, price, off, currency }) {
           <p className="text-justify px-2 Yekan text-sm">{desc}</p>
         </div>
         <div className="my-2 flex justify-around ">
-          <p
+          <p className="Lamia"
             style={{
               textDecorationLine: "line-through",
               textDecorationColor: "red",
@@ -31,7 +31,7 @@ function Commoditys({id , title, img, name, desc, price, off, currency }) {
           >
             {price}
           </p>
-          <b>{off}</b>
+          <b className="Lamia">{off}</b>
         </div>
         <h1 className="Lamia ">{currency}</h1>
         <button

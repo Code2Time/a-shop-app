@@ -1,0 +1,29 @@
+.shop-item-contaainer{
+    box-shadow: 20px 20px 50px 15px rgba(255, 0, 0, 0.033);
+}
+.img-item-container img {
+  transition: transform 1s, filter 1s ease;
+  filter: blur(0.8px);
+  transform: scale(1.2);
+}
+.img-item-container:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+.price-item span{
+   text-decoration: line-through;
+   text-decoration-color: red;
+   text-decoration-thickness: 2px;
+   
+}
+.buy-btn-pro button{
+    background: rgb(91,39,61);
+background: linear-gradient(227deg, rgba(91,39,61,1) 0%, rgba(116,125,135,1) 100%);
+color: #fff;
+transition: all 0.5s;
+}
+.buy-btn-pro button:hover{
+    color: #000000;
+    transform:scale(1.1)
+    
+}

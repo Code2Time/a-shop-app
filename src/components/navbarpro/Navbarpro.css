@@ -1,0 +1,39 @@
+#navpro-container {
+  background: rgba(134, 72, 72, 0.808);
+  background: linear-gradient(
+    216deg,
+    rgb(134, 72, 72) 17%,
+    rgba(49, 74, 88, 1) 100%
+  );
+}
+.button-pro {
+  backdrop-filter: blur(1px) saturate(100%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: transparent;
+}
+.button-pro:focus {
+  box-shadow: rgba(0, 0, 0, 0.091) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.015) 0px 0px 0px 1px;
+}
+.box-color {
+  background-color: rgba(117, 104, 103, 0.551);
+}
+
+/* border */
+.button-pro {
+  --c: #d4a79784; /* the border color */
+  --b: 2px; /* the border thickness*/
+  --g: 1px; /* the gap on hover */
+
+  padding: calc(var(--g) + var(--b));
+  --_g: #e11a1a00 25%, var(--c) 0;
+  background: conic-gradient(
+        from 180deg at top var(--b) right var(--b),
+        var(--_g)
+      )
+      var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+    conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0
+      var(--_i, 200%) / var(--_i, var(--b)) 200% no-repeat;
+  transition: 0.3s, background-position 0.3s 0.3s;
+  cursor: pointer;
+}

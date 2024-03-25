@@ -1,21 +1,17 @@
-import React, { useState } from 'react'
-import './More.css'
-import {commodityses2} from  '../../Data'
-import Commoditys from '../commoditys/Commoditys'
-
-
+import React, { useState } from "react";
+import "./More.css";
+import { commodityses2 } from "../../Data";
+import Commoditys from "../commoditys/Commoditys";
 
 function More() {
-  const[productdata , setProductdata] = useState(commodityses2)
+  const [productdata, setProductdata] = useState(commodityses2);
   return (
-  <>
-  
-     {productdata.map((item) => (
-      <Commoditys {...item} />
-    ))}
-  
-  </>
-  )
+    <>
+      {productdata.map((item) => (
+        <Commoditys key={item.id} {...item} />
+      ))}
+    </>
+  );
 }
 
-export default More
+export default More;
