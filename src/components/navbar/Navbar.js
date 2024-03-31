@@ -7,7 +7,6 @@ import { CgProfile } from "react-icons/cg";
 import { CgLogIn } from "react-icons/cg";
 import { AiOutlineTeam } from "react-icons/ai";
 
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -34,12 +33,6 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 ">
-                    <NavLink
-                      to="/shop"
-                      className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
-                    >
-                      محصولات
-                    </NavLink>
                     <NavLink
                       to="/news"
                       className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
@@ -106,7 +99,7 @@ export default function Navbar() {
                               "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1 "
                             )}
                           >
-                           <CgProfile size={18}/> پنل
+                            <CgProfile size={18} /> پنل
                           </NavLink>
                         )}
                       </Menu.Item>
@@ -121,7 +114,7 @@ export default function Navbar() {
                               "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1"
                             )}
                           >
-                           <CgLogIn size={20} /> ورود
+                            <CgLogIn size={20} /> ورود
                           </NavLink>
                         )}
                       </Menu.Item>
@@ -136,7 +129,7 @@ export default function Navbar() {
                               "flex justify-center items-center gap-2 px-4 py-2 text-sm text-center Lamia transition-all hover:text-white hover:-translate-y-1 "
                             )}
                           >
-                           <AiOutlineTeam size={20} />  درباره ما
+                            <AiOutlineTeam size={20} /> درباره ما
                           </NavLink>
                         )}
                       </Menu.Item>

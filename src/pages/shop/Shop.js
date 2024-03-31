@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-import Navbar from "../../components/navbar/Navbar";
 import "./Shop.css";
 import { commodityses } from "../../Data";
 import Navbarpro from "../../components/navbarpro/Navbarpro";

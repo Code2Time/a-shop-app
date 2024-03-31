@@ -183,9 +183,6 @@ export const commodityses = [
     off: "2/990/000",
     currency : 'ملیون تومان'
   },
-];
-
-export const commodityses2 = [
   {
     id: 13,
     title: "محصول13",
@@ -305,5 +302,6 @@ export const commodityses2 = [
     price: "500/000",
     off: "430/000",
     currency : 'هزار تومان'
-  },
+  }
 ];
+

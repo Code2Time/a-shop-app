@@ -10,9 +10,6 @@ const Rout = [
   {
     path: "/",
     element: <Home />,
-    children : [
-      {path : 'more' , element : <More /> }
-    ]
   },
   { path: "/shop/:IdItem", element: <Shop /> },
   { path: "/news", element: <News /> },

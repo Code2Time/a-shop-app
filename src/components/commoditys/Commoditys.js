@@ -6,6 +6,7 @@ function Commoditys({id , title, img, name, desc, price, off, currency }) {
   return (
     <>
       <div
+        data-aos='flip-left'
         id="commoditys-item"
         className="odd2 col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3  text-center py-1 px-3 row-auto rounded-md mt-4"
       >
