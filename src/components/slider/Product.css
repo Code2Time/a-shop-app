@@ -25,6 +25,8 @@
   box-shadow: rgba(0, 60, 255, 0.216) 0px 15px 70px -20px,
     rgba(53, 81, 148, 0.339) 0px 30px 60px -30px,
     rgba(10, 18, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: scale(1.02);
+  cursor: pointer;
 }
 .product-img {
   border-radius: 3.5px;

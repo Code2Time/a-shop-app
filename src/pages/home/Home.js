@@ -24,7 +24,7 @@ function Home() {
           data-aos="fade-down"
           className="title-sec text-center text-bold  sm:text-3xl my-16 "
         >
-          ------ پیشنهادات ویژه -----
+          ------ بهم بگو چی میخوای؟ -----
         </h1>
         <Slider />
         <h1

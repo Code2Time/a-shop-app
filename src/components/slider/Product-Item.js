@@ -15,9 +15,6 @@ function ProductItem(props) {
       <div className="body">
         <h1 className="text-justify w-[80%] m-auto ">{props.desc}</h1>
       </div>
-      <button className="buy-btn mt-10 ">
-        <Link className="Lamia">خرید</Link>
-      </button>
     </div>
   );
 }
