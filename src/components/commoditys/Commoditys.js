@@ -1,12 +1,11 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Commoditys.css";
 
-function Commoditys({id , title, img, name, desc, price, off, currency }) {
-
+function Commoditys({ id, title, img, name, desc, price, off, currency }) {
   return (
     <>
       <div
-        data-aos='flip-left'
+        data-aos="flip-left"
         id="commoditys-item"
         className="odd2 col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3  text-center py-1 px-3 row-auto rounded-md mt-4"
       >
@@ -24,7 +23,8 @@ function Commoditys({id , title, img, name, desc, price, off, currency }) {
           <p className="text-justify px-2 Yekan text-sm">{desc}</p>
         </div>
         <div className="my-2 flex justify-around ">
-          <p className="Lamia"
+          <p
+            className="Lamia"
             style={{
               textDecorationLine: "line-through",
               textDecorationColor: "red",
@@ -40,7 +40,9 @@ function Commoditys({id , title, img, name, desc, price, off, currency }) {
           type="button"
           className=" col-span-12 my-10 mx-auto text-center items-center justify-center w-3/4 h-[30px] rounded-md shadow shadow-slate-600 transition-all hover:-translate-y-1  hover:shadow  "
         >
-          <Link to={`/shop/${id}`} className="Lalezar  ">خرید</Link>
+          <Link to={`/shop/${id}`} className="Lalezar  ">
+            خرید
+          </Link>
         </button>
       </div>
     </>

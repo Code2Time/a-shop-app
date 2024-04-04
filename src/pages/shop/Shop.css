@@ -1,15 +1,7 @@
 .shop-item-contaainer{
     box-shadow: 20px 20px 50px 15px rgba(255, 0, 0, 0.033);
 }
-.img-item-container img {
-  transition: transform 1s, filter 1s ease;
-  filter: blur(0.8px);
-  transform: scale(1.2);
-}
-.img-item-container:hover img {
-  filter: blur(0);
-  transform: scale(1);
-}
+
 .price-item span{
    text-decoration: line-through;
    text-decoration-color: red;
