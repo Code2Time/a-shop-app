@@ -6,6 +6,7 @@ import "./Home.css";
 import { commodityses, commodityses2 } from "../../Data";
 import { Link, Outlet } from "react-router-dom";
 import { TfiArrowCircleUp } from "react-icons/tfi";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
   const [commoditysitem, setCommoditysitem] = useState(commodityses);
@@ -55,6 +56,7 @@ function Home() {
           />
         </a>
       </div>
+      <Footer />
     </>
   );
 }

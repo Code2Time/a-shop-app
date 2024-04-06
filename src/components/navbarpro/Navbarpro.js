@@ -38,12 +38,6 @@ function Navbarpro() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 ">
                     <NavLink
-                      to="/shop"
-                      className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
-                    >
-                      محصولات
-                    </NavLink>
-                    <NavLink
                       to="/news"
                       className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
                     >

@@ -3,6 +3,7 @@ import "./Shop.css";
 import { commodityses } from "../../Data";
 import Navbarpro from "../../components/navbarpro/Navbarpro";
 import { TbShoppingBagPlus } from "react-icons/tb";
+import Footer from "../../components/footer/Footer";
 
 function Shop() {
   const IdItem = useParams().IdItem;
@@ -48,6 +49,7 @@ function Shop() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

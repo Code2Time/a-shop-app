@@ -3,6 +3,7 @@ import Navbarpro from "../../components/navbarpro/Navbarpro";
 import "./News.css";
 import Newsdata from "./NewsData";
 import { TfiArrowCircleUp } from "react-icons/tfi";
+import Footer from "../../components/footer/Footer";
 
 function News() {
   const [ndata, setNdata] = useState(Newsdata);
@@ -27,7 +28,8 @@ function News() {
             />
           </div>
         ))}
-      </div>{" "}
+      </div>
+      <Footer />
     </div>
   );
 }
