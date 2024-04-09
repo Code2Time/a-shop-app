@@ -33,6 +33,12 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4 ">
+                  <NavLink
+                      to="/about"
+                      className="text-gray-300 hover:bg-transparent hover:text-white rounded-md px-3 py-2 text-sm font-medium Lamia"
+                    >
+                      درباره ما
+                    </NavLink>
                     <NavLink
                       to="/news"
                       className="text-gray-300 hover:bg-transparent  hover:text-white  rounded-md px-3 py-2 text-sm font-medium Lamia"
@@ -45,6 +51,7 @@ export default function Navbar() {
                     >
                       صفحه اصلی
                     </NavLink>
+                 
                   </div>
                 </div>
               </div>
