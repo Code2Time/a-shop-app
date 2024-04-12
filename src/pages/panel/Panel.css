@@ -1,0 +1,7 @@
+.shop-title{
+    background-image: url('../../assets/images/Pizelex.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
