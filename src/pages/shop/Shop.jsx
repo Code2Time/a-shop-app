@@ -20,7 +20,7 @@ function Shop() {
         </h1>
         <div className="img-item-container col-span-12 w-[50%] h-[250px] mx-auto  p-10">
           <img
-            className="img-item w-full h-full cursor-pointer transition-all hover:scale-150"
+            className="img-item w-full h-full hover:cursor-zoom-in transition-all hover:scale-150"
             src={Data.img}
           />
         </div>
@@ -48,6 +48,9 @@ function Shop() {
             </Link>
           </button>
         </div>
+      </div>
+      <div className="box-shop w-11/12 max-w-[1500px] h-7 border mx-auto my-9 ">
+
       </div>
       <Footer />
     </div>
